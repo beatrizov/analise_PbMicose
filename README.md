@@ -33,5 +33,37 @@ O script processa planilhas consolidadas (`.csv`) contendo a primeira hipótese 
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+   git clone [https://github.com/beatrizov/analise_PbMicose.git](https://github.com/beatrizov/analisePbMicose.git)
    cd NOME_DO_REPOSITORIO
+
+```
+
+2. **Instale as dependências:**
+É recomendado o uso de um ambiente virtual (venv).
+```bash
+pip install pandas numpy scikit-learn statsmodels
+
+```
+
+
+3. **Execute o script de análise:**
+Certifique-se de que a planilha `.csv` está no mesmo diretório do script ou ajuste o caminho no código.
+```bash
+python analise_PbMicose.py
+
+```
+
+
+
+## 📊 Interpretação dos Resultados
+
+O script imprimirá no terminal os valores de Kappa. Segundo a literatura clássica (Landis & Koch, 1977), a interpretação obedece à seguinte escala:
+
+* **< 0,00:** Pior que o acaso
+* **0,00 - 0,20:** Concordância leve
+* **0,21 - 0,40:** Concordância razoável
+* **0,41 - 0,60:** Concordância moderada
+* **0,61 - 0,80:** Concordância substancial
+* **0,81 - 1,00:** Concordância quase perfeita
+
+---
